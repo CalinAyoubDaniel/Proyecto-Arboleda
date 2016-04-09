@@ -1,0 +1,119 @@
+body{
+	width: 99.9%;
+}
+#contenido{
+	margin: 0 auto;
+	border: 1px solid #F0F0F0;
+	box-shadow: 0px 0px 5px #f7f7f7;
+	padding: 10px;
+	border-radius: 4px;
+	width: 60%;
+	box-shadow: 0px 0px 10px #4C4B4B;
+}
+#cabecera{
+	width: 99%;
+	height: 4%;
+}
+#cabecera img{
+	height: 220px;
+	width: 150px
+}
+#cabecera h1{
+	margin-left: 15%;
+	margin-top: -5%;
+	text-shadow:2px 2px 3px white,
+	-2px -2px 3px white;
+	color: #F9882D;
+}
+#cabecera a{
+	text-decoration:none;  
+	color: #F9882D;
+}
+#cuerpo nav ul li{
+	margin-left: 8%;
+	display: inline-block;
+	text-align: center; 
+	padding:1%;
+	color: #FFFFFF;
+
+}
+#cuerpo nav{
+	background-color: #F9882D;
+	border-radius: 4px;
+}
+.linea a{
+	color: #FFFFFF;
+	text-decoration:none;
+}
+#primero {
+	background-color: #ECECEC;
+	padding: 4px;
+	width: 99.5%;
+	border-radius: 4px;
+}
+#primero h3{
+	color: #F9882D;
+}
+#primero1{
+	float: right;
+	margin-top: -4%;
+	margin-right: 6%;
+	border-right: 1px solid #FFFFFF;
+	padding-right: 10px;
+}
+#primero1 a{
+	color: #626262;
+}
+#primero1 img{
+	width: 40px;
+	height: 40px;
+}
+#primero2{
+	float: right;
+	margin-top: -3.5%;
+	padding-right: 10px;
+}
+#primero2 img{
+	width: 40px;
+	height: 40px;
+}
+#segundo{
+	clear: both;
+	margin-top: 2%;
+	width: 70%;
+	position: relative;
+}
+#slider{
+	border-radius:10px;
+	width: 92%;
+	min-height: 200px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+	padding:0px;
+}
+.elemento{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100px;
+}
+#tabla{
+	width: 92%;
+}
+#tabla table{
+	padding-top: 20px;
+}
+#tabla table td{
+	border: 1px solid #C1BBBB;
+	width: 235px;
+	height: 205px;
+	padding: 20px;
+	box-shadow: 0px 0px 10px #FA8E01;
+}
+
+
+
+
+
