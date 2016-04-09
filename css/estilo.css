@@ -35,16 +35,56 @@ body{
 	text-align: center; 
 	padding:1%;
 	color: #FFFFFF;
+	
 
 }
 #cuerpo nav{
 	background-color: #F9882D;
 	border-radius: 4px;
+	position: relative;
 }
 .linea a{
 	color: #FFFFFF;
 	text-decoration:none;
 }
+nav > li{
+	float: left;
+}
+nav li a {
+	text-decoration:none;
+	display:block;
+}
+			
+nav li a:hover {
+	background-color:#FCFCFC;
+	color: #F7750C;
+}
+nav li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+	background-color: #F9882D;
+}
+
+nav li:hover > ul {
+	display:block;
+	border-radius: 10px;
+	margin-top: 15px;
+	float: left;
+}
+
+nav li ul li {
+	position:relative;
+	float: left;
+
+}
+.nav2{
+	width: 8%;
+	 
+  z-index: 999;
+}
+
+
 #primero {
 	background-color: #ECECEC;
 	padding: 4px;
@@ -100,10 +140,12 @@ body{
 	width: 100px;
 }
 #tabla{
-	width: 92%;
+	width: 99%;
 }
 #tabla table{
-	padding-top: 20px;
+	padding-top: 30px;
+	width: 99%;
+	text-align: center;
 }
 #tabla table td{
 	border: 1px solid #C1BBBB;
@@ -111,6 +153,41 @@ body{
 	height: 205px;
 	padding: 20px;
 	box-shadow: 0px 0px 10px #FA8E01;
+}
+#tabla table td a{
+	text-decoration: none;
+}
+#table table tr td a img{
+	width: 100px; height: 100px;
+}
+.oferta{
+	background-color: #ECECEC;
+	padding-left: 10px;
+	width: 50%;
+	height: 1%;
+	border-radius: 10px;
+}
+.oferta h3{
+	color: #F9882D;
+}
+.titulos{
+	color: #F9882D;
+}
+#tercero{
+	width: 92%;	
+	padding-bottom: 10%;
+}
+.imagen{
+	clear: both;
+	width: 10%;
+	padding: 5%;
+	margin-top: 20px;
+}
+.info{
+	clear: both;
+	width: 60%;
+	float: right;
+	margin-top: -30%;
 }
 
 
