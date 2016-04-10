@@ -65,7 +65,7 @@
 						<img src="./imagenes/icono_persona.png" alt="persona"></a>
 					</div>
 					<div id="primero2">
-						<a href="">
+						<a href="./php/carritodecompras.php">
 						<img src="./imagenes/cesta.png" alt="persona"></a>
 					</div>
 				</div>

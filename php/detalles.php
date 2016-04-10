@@ -1,14 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<title>COMPONENTESPC</title>
-	
 
 		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 
-
-		
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js' type='text/javascript'/> </script>
 		<script type="text/javascript">//<![CDATA[
 			$(function(){
@@ -65,7 +63,7 @@
 						<img src="../imagenes/icono_persona.png" alt="persona"></a>
 					</div>
 					<div id="primero2">
-						<a href="">
+						<a href="./carritodecompras.php">
 						<img src="../imagenes/cesta.png" alt="persona"></a>
 					</div>
 				</div>
@@ -83,6 +81,7 @@
 						<h3 class="titulos"><?php echo $f['nombre'];?></h3>
 						<p class="titulos"><?php echo $f['descripcion'];?></p>
 						<h1 class="titulos"><?php echo $f['precio'];?><span>€</span></h1>
+						<a href="./carritodecompras.php?id=<?php echo $f['id'];?>">Añadir al Carrito</a>
 					</div>
 				</div>
 

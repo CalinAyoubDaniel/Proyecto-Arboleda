@@ -175,7 +175,8 @@ nav li ul li {
 }
 #tercero{
 	width: 92%;	
-	padding-bottom: 10%;
+	padding-bottom: 20%;
+
 }
 .imagen{
 	clear: both;
@@ -188,6 +189,7 @@ nav li ul li {
 	width: 60%;
 	float: right;
 	margin-top: -30%;
+	padding-right: 10px;
 }
 
 
