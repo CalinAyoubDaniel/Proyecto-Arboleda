@@ -13,7 +13,7 @@ var inicio=function(){
 					Precio:precio,
 					Cantidad:cantidad
 				},function(e){
-					$('#total').text('Total : '+e);
+					$('#total').text(e);
 				});
 			}
 		}

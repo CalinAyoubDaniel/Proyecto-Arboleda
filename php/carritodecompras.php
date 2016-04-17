@@ -137,9 +137,10 @@
 					<table>
 						
 						<?php
+						$total = 0;
 							if(isset($_SESSION['carrito'])){
 								$datos = $_SESSION['carrito'];
-								$total = 0;
+								
 								
 								for ($i=0; $i < count($datos); $i++) { 
 						?>
@@ -165,11 +166,14 @@
 							$total =($datos[$i]['Precio']*$datos[$i]['Cantidad'])+$total;
 
 							}
-								echo "<tr><td id='total'><h2>Total: </h2></td><td><h2>".$total."</h2></td></tr>";
 							}else{
 								echo "<h2>El carrito de compras está vacio.</h2>";
 							}
 							
+							echo "<tr><td><h2>Total: </h2></td><td id='total'><h2>".$total."</h2></td></tr>";
+							if($total!=0){
+								echo "<tr><td><a href='./compras/compras.php'  class='aceptar' >Comprar</a></td></tr>";
+							}
 						?>
 					</table>
 					<p><a href="../index.php">Ver Catalogo</a></p>
