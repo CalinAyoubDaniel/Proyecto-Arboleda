@@ -44,17 +44,33 @@
 						</li>
 						<li class="linea"><a href="">PERIFERICOS</a>
 							<ul class="nav2">
-								<li class="linea">Placa base</li>
-								<li class="linea">Procesadores</li>
-								<li class="linea">Discos Duros</li>
-								<li class="linea">Tarjetas Gráficas</li>
-								<li class="linea">Memoria RAM</li>
-								<li class="linea">Fuentes de A.</li>
-								<li class="linea">Cajas/Torres</li>
+								<li class="linea">Monitores</li>
+								<li class="linea">Impresoras</li>
+								<li class="linea">Multifunciones</li>
+								<li class="linea">Altavoces</li>
+								<li class="linea">Teclados</li>
+								<li class="linea">Ratones</li>
+								<li class="linea">Auriculares</li>
 							</ul>
 						</li>
-						<li class="linea"><a href="">ZONA APPLE</a></li>
-						<li class="linea"><a href="">SMARTPHONE</a></li>
+						<li class="linea"><a href="">ZONA APPLE</a>
+							<ul class="nav2">
+								<li class="linea">Iphone</li>
+								<li class="linea">Accesorios</li>
+								<li class="linea">Altavoces</li>
+								<li class="linea">Auriculares</li>
+								<li class="linea">Respuestos</li>
+							</ul>
+						</li>
+						<li class="linea"><a href="">SMARTPHONES</a>
+							<ul class="nav2">
+								<li class="linea">Smartphones</li>
+								<li class="linea">Fundas</li>
+								<li class="linea">Protectores de Pantalla</li>
+								<li class="linea">Tarjetas MicroSD</li>
+								<li class="linea">Powerbanks</li>
+							</ul>
+						</li>
 							
 					</ul>
 				</nav>
