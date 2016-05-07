@@ -8,12 +8,19 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>COMPONENTESPC</title>
+
 		<!--Media Query -->
 		<meta name="viewport" content="initial-scale=1">
 		<!--Resolucion para pantalla profesor maximo width 1152 x 824 -->
 		<link rel="stylesheet" type="text/css" href="./css/estilo.css" media="screen and (min-width: 980px)">
 		<link rel="stylesheet" type="text/css" href="./css/tablet.css" media="screen and (min-width: 650px) and (max-width :980px) ">
 		<link rel="stylesheet" type="text/css" href="./css/movil.css" media="screen and (max-width :650px)">
+
+	
+
+		<link rel="stylesheet" type="text/css" href="./css/estilo.css">
+		<link href="./imagenes/icono2.ico" type="image/x-icon" rel="shortcut icon" />
+
 
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js' type='text/javascript'/> </script>
 		<script type="text/javascript">//<![CDATA[
@@ -39,17 +46,18 @@
 						<li class="linea"><a href="./index.php">HOME</a></li>
 						<li class="linea"><a href="">COMPONENTES</a>
 							<ul class="nav2">
-								<li class="linea">Placa base</li>
-								<li class="linea">Procesadores</li>
-								<li class="linea">Discos Duros</li>
-								<li class="linea">Tarjetas Gráficas</li>
-								<li class="linea">Memoria RAM</li>
-								<li class="linea">Fuentes de A.</li>
-								<li class="linea">Cajas/Torres</li>
+								<li class="linea"><a href="./Componentes/placas/placas.php" target="_blank">Placas base</a></li>
+								<li class="linea"><a href="./Componentes/procesadores/procesadores.php" target="_blank">Procesadores</a></li>
+								<li class="linea"><a href="./Componentes/discos duros/discos.php" target="_blank">Discos Duros</a></li>
+								<li class="linea"><a href="./Componentes/graficas/graficas.php" target="_blank">Tarjetas Gráficas</a></li>
+								<li class="linea"><a href="./Componentes/memorias ram/ram.php" target="_blank">Memorias RAM</a></li>
+								<li class="linea"><a href="./Componentes/fuentes/fuentes.php" target="_blank">Fuentes de A.</a></li>
+								<li class="linea"><a href="./Componentes/cajas/cajas.php" target="_blank">Cajas/Torres</a></li>
 							</ul>
 						</li>
 						<li class="linea"><a href="">PERIFERICOS</a>
 							<ul class="nav2">
+
 								<li class="linea">Monitores</li>
 								<li class="linea">Impresoras</li>
 
@@ -61,10 +69,20 @@
 								<li class="linea">Teclados</li>
 								<li class="linea">Ratones</li>
 								<li class="linea">Auriculares</li>
+
+								<li class="linea"><a href="./Perifericos/monitores/monitores.php" target="_blank">Monitores</a></li>
+								<li class="linea"><a href="./Perifericos/impresoras/impresoras.php" target="_blank">Impresoras</a></li>
+								<li class="linea"><a href="./Perifericos/multifuncion/multifunciones.php" target="_blank">Multifunciones</a></li>
+								<li class="linea"><a href="./Perifericos/altavoces/altavoces.php" target="_blank">Altavoces</a></li>
+								<li class="linea"><a href="./Perifericos/teclados/teclados.php" target="_blank">Teclados</a></li>
+								<li class="linea"><a href="./Perifericos/ratones/ratones.php" target="_blank">Ratones</a></li>
+								<li class="linea"><a href="./Perifericos/auriculares/auriculares.php" target="_blank">Auriculares</a></li>
+
 							</ul>
 						</li>
 						<li class="linea"><a href="">ZONA APPLE</a>
 							<ul class="nav2">
+
 
 								<li class="linea">iPhone</li>
 								<li class="linea">Accesorios iPhone</li>
@@ -90,15 +108,20 @@
 								<li class="linea">Altavoces</li>
 								<li class="linea">Auriculares</li>
 								<li class="linea">Respuestos</li>
+
+								<li class="linea"><a href="./Zona Apple/iphone/iphone.php" target="_blank">Iphone</a></li>
+								<li class="linea"><a href="./Zona Apple/accesorios/accesorios.php" target="_blank">Accesorios</a></li>
+								<li class="linea"><a href="./Zona Apple/repuestos/repuestos.php" target="_blank">Repuestos</a></li>
+
 							</ul>
 						</li>
 						<li class="linea"><a href="">SMARTPHONES</a>
 							<ul class="nav2">
-								<li class="linea">Smartphones</li>
-								<li class="linea">Fundas</li>
-								<li class="linea">Protectores de Pantalla</li>
-								<li class="linea">Tarjetas MicroSD</li>
-								<li class="linea">Powerbanks</li>
+								<li class="linea"><a href="./Smartphones/telefonos/telefonos.php" target="_blank">Smartphones</a></li>
+								<li class="linea"><a href="./Smartphones/fundas/fundas.php" target="_blank">Fundas</a></li>
+								<li class="linea"><a href="./Smartphones/protectores/protectores.php" target="_blank">Protectores de Pantalla</a></li>
+								<li class="linea"><a href="./Smartphones/tarjetas/tarjetas.php" target="_blank">Tarjetas MicroSD</a></li>
+								<li class="linea"><a href="./Smartphones/powerbanks/power.php" target="_blank">Powerbanks</a></li>
 							</ul>
 						</li>
 							
