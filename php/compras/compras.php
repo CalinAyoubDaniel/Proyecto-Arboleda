@@ -13,16 +13,18 @@ session_start();
 	}else{
 		$numeroventa++;
 	}
-	for($i=0;$i<count($array);$i++){
-		mysql_query("insert into compras (numeroventa, imagen, nombre, precio, cantidad, subtotal) value 
-			(".$numeroventa.",
-			'".$array[$i]['Imagen']."',
-			'".$array[$i]['Nombre']."',
-			'".$array[$i]['Precio']."',
-			'".$array[$i]['Cantidad']."',
-			'".($array[$i]['Precio']*$array[$i]['Cantidad'])."'
-			)")or die(mysql_error());
+	if(isset($_SESSION['correo'])){
+		$correo = $_SESSION['correo'];
+		$select = mysql_query("select * from usuarios where correo='$correo'")or die(mysql_error());
+		$cosa = mysql_fetch_array($select);
+		$dni = $cosa[3];
+		echo $dni;
+		for($i=0;$i<count($array);$i++){
+			mysql_query("insert into compras (dni,numeroventa, nombre, precio, cantidad, subtotal) values ('".$dni."','".$numeroventa."','".$array[$i]['Nombre']."','".$array[$i]['Precio']."','".$array[$i]['Cantidad']."','".($array[$i]['Precio']*$array[$i]['Cantidad'])."')")or die(mysql_error());
+		}
+		unset($_SESSION['carrito']);
+		header("Location: ../../index.php");
+	}else{
+		header("Location: ../registro.php");
 	}
-	unset($_SESSION['carrito']);
-	header("Location: ../../index.php");
 ?>

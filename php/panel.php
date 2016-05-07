@@ -1,63 +1,6 @@
 <?php
-	session_start();
-	include './conexion.php';
-	if(isset($_SESSION['carrito'])){
-		if(isset($_REQUEST['id'])){
-				$array=$_SESSION['carrito'];
-				$encontro = false;
-				$numero = 0;
-				for ($i=0; $i <count($array) ; $i++) { 
-					if ($array[$i]['Id']==$_REQUEST['id']) {
-						$encontro = true;
-						$numero = $i;
-					}
-				}
-				if($encontro==true){
-					$array[$numero]['Cantidad']=$array[$numero]['Cantidad']+1;
-					$_SESSION['carrito']=$array;
-				}else{
-					$nombre="";
-					$precio=0;
-					$imagen="";
-					$re=mysql_query("select * from productos where id=".$_REQUEST['id']);
-					while ($f=mysql_fetch_array($re)) {
-						$nombre=$f['nombre'];
-						$precio=$f['precio'];
-						$imagen=$f['imagen'];
-					}
-					$arrayNuevo=array(
-						'Id'=>$_REQUEST['id'],
-						'Nombre'=>$nombre,
-						'Precio'=>$precio,
-						'Imagen'=>$imagen,
-						'Cantidad'=>1
-					);
-					array_push($array, $arrayNuevo);
-					$_SESSION['carrito']=$array;
-				}
-			}
 
-	}else{
-		if(isset($_REQUEST['id'])){
-			$nombre="";
-			$precio=0;
-			$imagen="";
-			$re=mysql_query("select * from productos where id=".$_REQUEST['id']);
-			while ($f=mysql_fetch_array($re)) {
-				$nombre=$f['nombre'];
-				$precio=$f['precio'];
-				$imagen=$f['imagen'];
-			}
-			$array[]=array(
-				'Id'=>$_REQUEST['id'],
-				'Nombre'=>$nombre,
-				'Precio'=>$precio,
-				'Imagen'=>$imagen,
-				'Cantidad'=>1
-			);
-			$_SESSION['carrito']=$array;
-		}
-	}
+	session_start();
 
 ?>
 <!DOCTYPE html>
@@ -65,15 +8,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>COMPONENTESPC</title>
-
 		<!--Media Query -->
 		<meta name="viewport" content="initial-scale=1">
+		<!--Resolucion para pantalla profesor maximo width 1152 x 824 -->
 		<link rel="stylesheet" type="text/css" href="../css/estilo.css" media="screen and (min-width: 980px)">
 		<link rel="stylesheet" type="text/css" href="../css/tablet.css" media="screen and (min-width: 650px) and (max-width :980px) ">
 		<link rel="stylesheet" type="text/css" href="../css/movil.css" media="screen and (max-width :650px)">
 
-		<script type="text/javascript" src="../jquery/jquery-1.12.3.min.js"></script>
-		<script type="text/javascript" src="../jquery/script.js"></script>
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js' type='text/javascript'/> </script>
 		<script type="text/javascript">//<![CDATA[
 			$(function(){
@@ -146,70 +87,77 @@
 						<?php
 							if(isset($_SESSION['correo'])){
 						?>
-							<a href="panel.php">Bienvenido: <?php echo $_SESSION['correo']; ?>
+							<a href="../php/panel.php">Bienvenido: <?php echo $_SESSION['correo']; ?>
 							<img src="../imagenes/icono_persona.png" alt="persona"></a>
 						<?php
 							}else{
 
 
 						?>
-						<a href="registro.php">Identifícate
+						<a href="../php/registro.php">Identifícate
 						<img src="../imagenes/icono_persona.png" alt="persona"></a>
 						<?php
 							}
 						?>
 					</div>
 					<div id="primero2">
-						<a href="#">
+						<a href="../php/carritodecompras.php">
 						<img src="../imagenes/cesta.png" alt="persona"></a>
 					</div>
 				</div>
-				<div id="carrito">
-					<table id="detalles">
-						
-						<?php
-						$total = 0;
-							if(isset($_SESSION['carrito'])){
-								$datos = $_SESSION['carrito'];
-								
-								for ($i=0; $i < count($datos); $i++) { 
-						?>
-						<tr>
-							<div class="producto">
-								
-								
-									<td><img src="../imagenes/<?php echo $datos[$i]['Imagen'];?>"></td>
-									<td><?php echo $datos[$i]['Nombre'];?></td>
-									<td>Precio: <?php echo $datos[$i]['Precio'];?></td>
-									<td>Cantidad:
-										<input type="text" value="<?php echo $datos[$i]['Cantidad'];?>"
-										data-precio="<?php echo $datos[$i]['Precio'];?>"
-										data-id="<?php echo $datos[$i]['Id'];?>"
-										class="cantidad">
-									</td>
-									<td class="sub">Subtotal: <?php echo $datos[$i]['Precio']*$datos[$i]['Cantidad'];?></td>
-								
-							</div>
-						</tr>
-						<?php
-
-							$total =($datos[$i]['Precio']*$datos[$i]['Cantidad'])+$total;
-
-							}
-							}else{
-								echo "<h2>El carrito de compras está vacio.</h2>";
-							}
-							
-							echo "<tr><td><h2>Total: </h2></td><td id='total'><h2>".$total."</h2></td></tr>";
-							if($total!=0){
-								echo "<tr><td><a href='./compras/compras.php'  class='aceptar' >Comprar</a></td></tr>";
-							}
-						?>
-					</table>
-					<p><a href="../index.php">Ver Catalogo</a></p>
+				<div id="segundo">
+					<div id="slider">
+						<div class="elemento">
+							<a href=""><img src="../imagenes/banner-msi.jpg" alt="imagen1"></a>
+						</div>
+						<div class="elemento">
+							<a href=""><img src="../imagenes/banner-portatil.jpg" alt="imagen2"></a>
+						</div>
+						<div class="elemento">
+							<a href=""><img src="../imagenes/banner-RT.jpg" alt="imagen3"></a>
+						</div>
+					</div>
 				</div>
-			</div>	
-		</div>
+				<div class="panel">
+					<button id="factura" value="<?php echo $_SESSION['correo']; ?>"><img src="../imagenes/facturas.png"></button>
+					<button id="datos" value="<?php echo $_SESSION['correo']; ?>"><img src="../imagenes/datos.png"></button>
+					<button><a href="./informacion/salir.php"><img src="../imagenes/salir.png"></a></button>
+					<script type="text/javascript" src="../jquery/panel.js"></script>
+					<div id="lista">
+						
+					</div>
+					<div class="cambio">
+						<h2>Introduce los nuevos datos.</h2>
+							<table>
+							<form action='./informacion/cambiar.php' method='POST'>
+									<tr><td>dni: </td><td><input type="text" name="dni"></td></tr>
+									<tr><td>Nombre: </td><td><input type="text" name="nombre"></td></tr>
+									<tr><td>Apellidos: </td><td><input type="text" name="apellidos"></td></tr>
+									<tr><td>Direccion: </td><td><input type="text" name="direccion"></td></tr>
+									<tr><td>Pais: </td><td><input type="text" name="pais"></td></tr>
+									<tr><td>C-P: </td><td><input type="text" name="cp"></td></tr>
+									<tr><td>Poblacion: </td><td><input type="text" name="poblacion"></td></tr>
+									<tr><td>Provincia: </td><td><input type="text" name="provincia"></td></tr>
+									<tr><td>Telefono: </td><td><input type="text" name="telefono"></td></tr>
+									<tr><td>Fecha de Nacimiento: </td><td><input type="date" name="fecha"></td></tr>
+									<tr><td>Correo electrónico: </td><td><input type="email" name="correo" id="correo"></td></tr>
+									<tr><td>Clave: </td><td><input type="password" name="pass" id="pass"></td></tr>
+									<tr><td>Repetir Clave: </td><td><input type="password" name="passcom" id="passcom"></td></tr>
+									<tr><td><input type="checkbox" name="politica"></td><td>He leído y aceptado la <b>política de Privacidad</b>.</td></tr>
+									<tr><td>Tipo de Cliente: </td><td><select name="tipo">
+										<option value=""></option>
+										<option value="Particular/autónomo">Particular / Autónomo</option>
+										<option value="Empresa">Empresa</option>
+									</select></td></tr>
+									<tr><td><input type="submit" name="actualizar" value="Actualizar Datos"></td></tr>
+							</form>
+						
+					</table>
+					</div>
+					
 
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

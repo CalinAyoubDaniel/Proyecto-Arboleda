@@ -1,10 +1,13 @@
-.container{
+body{
+	width: 99%;
+}
+#contenido{
 	margin: 0 auto;
 	border: 1px solid #F0F0F0;
 	box-shadow: 0px 0px 5px #f7f7f7;
-	padding: 10px;
+	padding: 1%;
 	border-radius: 4px;
-	width: 60%;
+	width: 88.9%;
 	box-shadow: 0px 0px 10px #4C4B4B;
 }
 #cabecera{
@@ -12,24 +15,26 @@
 	height: 4%;
 }
 #cabecera img{
-	height: 220px;
-	width: 150px
+	height: 30%;
+	width: 25%;
 }
 #cabecera h1{
-	margin-left: 15%;
+	margin-left: 25%;
 	margin-top: -5%;
-	text-shadow:2px 2px 3px white,
+	text-shadow:2px 2px 3px #575757,
 	-2px -2px 3px white;
 	color: #F9882D;
+	font-size: 160%;
 }
 #cabecera a{
 	text-decoration:none;  
 	color: #F9882D;
 }
 #cuerpo nav ul li{
-	margin-left: 8%;
+	margin-left: 4.8%;
 	display: inline-block;
-	text-align: center; 
+	text-align: center;
+	font-size: 80%; 
 	padding:1%;
 	color: #FFFFFF;
 	
@@ -85,23 +90,25 @@ nav li ul li {
 #primero {
 	background-color: #ECECEC;
 	padding: 4px;
-	width: 99.5%;
+	width: 98.7%;
 	border-radius: 4px;
+	padding-bottom: 5%;
 }
 #primero h3{
 	color: #F9882D;
+	width: 50%;
+	font-size: 100%;
 }
 #primero1{
 	float: right;
-
-	margin-top: -4%;
-	margin-right: 6%;
+	margin-right: 15%;
 	border-right: 1px solid #FFFFFF;
-	padding-right: 10px;
+	margin-top: -10%;
+	width: 25%;
 }
 #primero1 a{
 	color: #626262;
-	padding-top: 0.5px;
+	font-size: 8px;
 }
 #primero1 img{
 	width: 30px;
@@ -109,8 +116,10 @@ nav li ul li {
 }
 #primero2{
 	float: right;
-	margin-top: -4%;
-	padding-right: 10px;
+	margin-top: -8.5%;
+	width: 15%;
+	margin-left: 60%;
+	margin-right: -5%;
 }
 #primero2 img{
 	width: 30px;
@@ -119,12 +128,12 @@ nav li ul li {
 #segundo{
 	clear: both;
 	margin-top: 2%;
-	width: 70%;
+	width:99.8%;
 	position: relative;
 }
 #slider{
 	border-radius:10px;
-	width: 92%;
+	width: 99.8%;
 	min-height: 200px;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -142,27 +151,25 @@ nav li ul li {
 	width: 99%;
 }
 #tabla table{
-	padding-top: 30px;
+	padding-top: 10%;
 	width: 99%;
 	text-align: center;
 }
 #tabla table td{
 	border: 1px solid #C1BBBB;
-	width: 235px;
-	height: 205px;
-	padding: 20px;
+	width: 20%;
+	height: 10%;
+	padding: 0.5%;
 	box-shadow: 0px 0px 10px #FA8E01;
 }
 #tabla table td a{
 	text-decoration: none;
 }
-#table table tr td a img{
-	width: 100px; height: 100px;
-}
+
 .oferta{
 	background-color: #ECECEC;
 	padding-left: 10px;
-	width: 50%;
+	width: 98%;
 	height: 1%;
 	border-radius: 10px;
 	padding-top: 0.5px;
@@ -172,6 +179,10 @@ nav li ul li {
 }
 .titulos{
 	color: #F9882D;
+	font-size: 2%;
+}
+.imagenes{
+	width: 60.5%;
 }
 #tercero{
 	width: 92%;	
@@ -195,8 +206,15 @@ nav li ul li {
 	padding: 1%;
 	width: 1%;
 }
+#carrito{
+	font-size: 15px;
+}
 #carrito input{
-	width: 50px;
+	width: 10px;
+}
+#carrito img{
+	width: 80px;
+	height: 80px;
 }
 #sesion{
 	width: 99%;
@@ -256,7 +274,6 @@ nav li ul li {
 	color: #ffffff;
 	text-align: center;
 }
-
 
 
 
