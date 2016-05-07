@@ -53,15 +53,6 @@
 						</li>
 						<li class="linea"><a href="">PERIFERICOS</a>
 							<ul class="nav2">
-
-								<li class="linea">Monitores</li>
-								<li class="linea">Impresoras</li>
-								<li class="linea">Multifuncion</li>
-								<li class="linea">Altavoces</li>
-								<li class="linea">Teclados</li>
-								<li class="linea">Ratones</li>
-								<li class="linea">Auriculares</li>
-
 								<li class="linea"><a href="../Perifericos/monitores/monitores.php" target="_blank">Monitores</a></li>
 								<li class="linea"><a href="../Perifericos/impresoras/impresoras.php" target="_blank">Impresoras</a></li>
 								<li class="linea"><a href="../Perifericos/multifuncion/multifunciones.php" target="_blank">Multifunciones</a></li>
@@ -74,24 +65,6 @@
 						</li>
 						<li class="linea"><a href="">ZONA APPLE</a>
 							<ul class="nav2">
-
-								<li class="linea">iPhone</li>
-								<li class="linea">Accesorios iPhone</li>
-								<li class="linea">Memorias USB</li>
-								<li class="linea">Altavoces</li>
-								<li class="linea">Auriculares</li>
-								<li class="linea">Repuestos</li>
-							</ul>
-						</li>
-						<li class="linea"><a href="">SMARTPHONE</a>
-							<ul class="nav2">
-								<li class="linea">Smartphones</li>
-								<li class="linea">Fundas</li>
-								<li class="linea">Protectores Pantalla</li>
-								<li class="linea">Tarjetas MicroSD</li>
-								<li class="linea">Powerbanks</li>
-								<li class="linea">Accesorios</li>
-
 								<li class="linea"><a href="../Zona Apple/iphone/iphone.php" target="_blank">Iphone</a></li>
 								<li class="linea"><a href="../Zona Apple/accesorios/accesorios.php" target="_blank">Accesorios</a></li>
 								<li class="linea"><a href="../Zona Apple/repuestos/repuestos.php" target="_blank">Repuestos</a></li>

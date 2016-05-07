@@ -98,44 +98,40 @@
 						<li class="linea"><a href="../index.php">HOME</a></li>
 						<li class="linea"><a href="">COMPONENTES</a>
 							<ul class="nav2">
-								<li class="linea">Placa base</li>
-								<li class="linea">Procesadores</li>
-								<li class="linea">Discos Duros</li>
-								<li class="linea">Tarjetas Gráficas</li>
-								<li class="linea">Memoria RAM</li>
-								<li class="linea">Fuentes de A.</li>
-								<li class="linea">Cajas/Torres</li>
+								<li class="linea"><a href="../piezas/Componentes/placas/placas.php">Placas base</a></li>
+								<li class="linea"><a href="../piezas/Componentes/procesadores/procesadores.php">Procesadores</a></li>
+								<li class="linea"><a href="../piezas/Componentes/discos duros/discos.php">Discos Duros</a></li>
+								<li class="linea"><a href="../piezas/Componentes/graficas/graficas.php">Tarjetas Gráficas</a></li>
+								<li class="linea"><a href="../piezas/Componentes/memorias ram/ram.php">Memorias RAM</a></li>
+								<li class="linea"><a href="../piezas/Componentes/fuentes/fuentes.php">Fuentes de A.</a></li>
+								<li class="linea"><a href="../piezas/Componentes/cajas/cajas.php">Cajas/Torres</a></li>
 							</ul>
 						</li>
 						<li class="linea"><a href="">PERIFERICOS</a>
 							<ul class="nav2">
-								<li class="linea">Monitores</li>
-								<li class="linea">Impresoras</li>
-								<li class="linea">Multifuncion</li>
-								<li class="linea">Altavoces</li>
-								<li class="linea">Teclados</li>
-								<li class="linea">Ratones</li>
-								<li class="linea">Auriculares</li>
+								<li class="linea"><a href="../piezas/Perifericos/monitores/monitores.php">Monitores</a></li>
+								<li class="linea"><a href="../piezas/Perifericos/impresoras/impresoras.php">Impresoras</a></li>
+								<li class="linea"><a href="../piezas/Perifericos/multifuncion/multifunciones.php">Multifunciones</a></li>
+								<li class="linea"><a href="../piezas/Perifericos/altavoces/altavoces.php">Altavoces</a></li>
+								<li class="linea"><a href="../piezas/Perifericos/teclados/teclados.php">Teclados</a></li>
+								<li class="linea"><a href="../piezas/Perifericos/ratones/ratones.php">Ratones</a></li>
+								<li class="linea"><a href="../piezas/Perifericos/auriculares/auriculares.php">Auriculares</a></li>
 							</ul>
 						</li>
 						<li class="linea"><a href="">ZONA APPLE</a>
 							<ul class="nav2">
-								<li class="linea">iPhone</li>
-								<li class="linea">Accesorios iPhone</li>
-								<li class="linea">Memorias USB</li>
-								<li class="linea">Altavoces</li>
-								<li class="linea">Auriculares</li>
-								<li class="linea">Repuestos</li>
+								<li class="linea"><a href="../piezas/Zona Apple/iphone/iphone.php">Iphone</a></li>
+								<li class="linea"><a href="../piezas/Zona Apple/accesorios/accesorios.php">Accesorios</a></li>
+								<li class="linea"><a href="../piezas/Zona Apple/repuestos/repuestos.php">Repuestos</a></li>
 							</ul>
 						</li>
 						<li class="linea"><a href="">SMARTPHONE</a>
 							<ul class="nav2">
-								<li class="linea">Smartphones</li>
-								<li class="linea">Fundas</li>
-								<li class="linea">Protectores Pantalla</li>
-								<li class="linea">Tarjetas MicroSD</li>
-								<li class="linea">Powerbanks</li>
-								<li class="linea">Accesorios</li>
+								<li class="linea"><a href="../piezas/Smartphones/telefonos/telefonos.php">Smartphones</a></li>
+								<li class="linea"><a href="../piezas/Smartphones/fundas/fundas.php">Fundas</a></li>
+								<li class="linea"><a href="../piezas/Smartphones/protectores/protectores.php">Protectores de Pantalla</a></li>
+								<li class="linea"><a href="../piezas/Smartphones/tarjetas/tarjetas.php">Tarjetas MicroSD</a></li>
+								<li class="linea"><a href="../piezas/Smartphones/powerbanks/power.php">Powerbanks</a></li>
 							</ul>
 						</li>
 					</ul>

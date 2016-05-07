@@ -77,8 +77,10 @@ nav li ul li {
 }
 .nav2{
 	width: 8%;
+	 
   z-index: 999;
 }
+
 
 #primero {
 	background-color: #ECECEC;
@@ -188,7 +190,6 @@ nav li ul li {
 	float: right;
 	margin-top: -30%;
 	padding-right: 10px;
-
 }
 #detalles td{
 	padding: 1%;
@@ -216,45 +217,11 @@ nav li ul li {
 	border-radius: 1%;
 	margin-top: -44.7%;
 }
-/****************************/
-.panel{
-	width: 99%;
-	margin-top: 2%;
-	border-radius: 10px;
-	border: 1px solid #B7B6B6;
-	padding: 10px;
-}
-#lista{
-	display: none;
-	padding: 10px;
-}
 .cambio{
 	display: none;
 }
-#lista table{
-	border: 1px solid black;
-	padding: 10px;
-	border-radius: 10px;
 
-}
-.cambio table{
-	border: 1px solid black;
-	padding: 10px;
-	border-radius: 10px;
-}
-.info-table tr td{
-	border: 1px solid black;
-}
-.info-tr{
-	background-color: #F8A505;
-	color: #ffffff;
-	text-align: center; 
-}
-.colorTabla{
-	background-color: #F8A505;
-	color: #ffffff;
-	text-align: center;
-}
+
 
 
 
