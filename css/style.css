@@ -1,0 +1,38 @@
+#logo{
+  
+width: 268px;
+margin-right: auto;
+margin-left: auto;
+
+}
+#logo-title{
+  	font-size: 28px;
+	width: 272px;
+	margin-left: auto;
+	margin-right: auto;
+	text-shadow:3px 3px 4px #989898,
+	-2px -2px 3px white;
+	color: #F9882D;
+
+}
+
+.imagenes{
+width: 150px;
+margin-right: auto;
+margin-left: auto;
+
+}
+
+.oferta{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	background-color: #ECECEC;
+	padding-left: 10px;
+	height: 1%;
+	border-radius: 10px;
+	padding-top: 0.5px;
+}
+.oferta h3{
+	color: #F9882D;
+}

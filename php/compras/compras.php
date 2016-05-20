@@ -25,6 +25,6 @@ session_start();
 		unset($_SESSION['carrito']);
 		header("Location: ../../index.php");
 	}else{
-		header("Location: ../registro.php");
+		header("Location: ../registro2.php");
 	}
 ?>

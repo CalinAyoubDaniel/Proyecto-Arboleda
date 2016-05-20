@@ -1,122 +1,39 @@
-
+<?php
+include("./conexion.php");
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>COMPONENTESPC</title>
+<head>
+	<?php
+	include("./cabecera_carrito.php");
+	?>
 
-		<!--Media Query -->
-		<meta name="viewport" content="initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="../css/estilo.css" media="screen and (min-width: 980px)">
-		<link rel="stylesheet" type="text/css" href="../css/tablet.css" media="screen and (min-width: 650px) and (max-width :980px) ">
-		<link rel="stylesheet" type="text/css" href="../css/movil.css" media="screen and (max-width :650px)">
-		<!--Import AJAX-->
+	
+</head>
 
+<body>
+	
 
-		<link rel="stylesheet" type="text/css" href="../css/estilo.css">
-		<link href="../imagenes/icono2.ico" type="image/x-icon" rel="shortcut icon" />
+	<div class="container">
 
-
-		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js' type='text/javascript'/> </script>
-		<!--Slider Carrusel-->
-		<script type="text/javascript">//<![CDATA[
-			$(function(){
-			    $('#slider div:gt(0)').hide();
-			    setInterval(function(){
-			      $('#slider div:first-child').fadeOut(0)
-			         .next('div').fadeIn(1000)
-			         .end().appendTo('#slider');}, 4000);
-			});
-			//]]>
-		</script>﻿
-	</head>
-	<body>
-		<div id="contenido">
-			<div id="cabecera">
-				<a href="../index.php"><img src="../imagenes/icono.png" alt="icono">
-				<h1>COMPONENTES PC</h1></a>
-			</div>
-			<div id="cuerpo">
-				<nav>
-					<ul>
-						<li class="linea"><a href="../index.php">HOME</a></li>
-						<li class="linea"><a href="">COMPONENTES</a>
-							<ul class="nav2">
-								<li class="linea"><a href="../Componentes/placas/placas.php" target="_blank">Placas base</a></li>
-								<li class="linea"><a href="../Componentes/procesadores/procesadores.php" target="_blank">Procesadores</a></li>
-								<li class="linea"><a href="../Componentes/discos duros/discos.php" target="_blank">Discos Duros</a></li>
-								<li class="linea"><a href="../Componentes/graficas/graficas.php" target="_blank">Tarjetas Gráficas</a></li>
-								<li class="linea"><a href="../Componentes/memorias ram/ram.php" target="_blank">Memorias RAM</a></li>
-								<li class="linea"><a href="../Componentes/fuentes/fuentes.php" target="_blank">Fuentes de A.</a></li>
-								<li class="linea"><a href="../Componentes/cajas/cajas.php" target="_blank">Cajas/Torres</a></li>
-							</ul>
-						</li>
-						<li class="linea"><a href="">PERIFERICOS</a>
-							<ul class="nav2">
-								<li class="linea"><a href="../Perifericos/monitores/monitores.php" target="_blank">Monitores</a></li>
-								<li class="linea"><a href="../Perifericos/impresoras/impresoras.php" target="_blank">Impresoras</a></li>
-								<li class="linea"><a href="../Perifericos/multifuncion/multifunciones.php" target="_blank">Multifunciones</a></li>
-								<li class="linea"><a href="../Perifericos/altavoces/altavoces.php" target="_blank">Altavoces</a></li>
-								<li class="linea"><a href="../Perifericos/teclados/teclados.php" target="_blank">Teclados</a></li>
-								<li class="linea"><a href="../Perifericos/ratones/ratones.php" target="_blank">Ratones</a></li>
-								<li class="linea"><a href="../Perifericos/auriculares/auriculares.php" target="_blank">Auriculares</a></li>
-
-							</ul>
-						</li>
-						<li class="linea"><a href="">ZONA APPLE</a>
-							<ul class="nav2">
-								<li class="linea"><a href="../Zona Apple/iphone/iphone.php" target="_blank">Iphone</a></li>
-								<li class="linea"><a href="../Zona Apple/accesorios/accesorios.php" target="_blank">Accesorios</a></li>
-								<li class="linea"><a href="../Zona Apple/repuestos/repuestos.php" target="_blank">Repuestos</a></li>
-							</ul>
-						</li>
-						<li class="linea"><a href="">SMARTPHONES</a>
-							<ul class="nav2">
-								<li class="linea"><a href="../Smartphones/telefonos/telefonos.php" target="_blank">Smartphones</a></li>
-								<li class="linea"><a href="../Smartphones/fundas/fundas.php" target="_blank">Fundas</a></li>
-								<li class="linea"><a href="../Smartphones/protectores/protectores.php" target="_blank">Protectores de Pantalla</a></li>
-								<li class="linea"><a href="../Smartphones/tarjetas/tarjetas.php" target="_blank">Tarjetas MicroSD</a></li>
-								<li class="linea"><a href="../Smartphones/powerbanks/power.php" target="_blank">Powerbanks</a></li>
-
-							</ul>
-						</li>
-					</ul>
-				</nav>
-				<div id="primero">
-					<h3>La tienda de tecnología online líder por precio, calidad y servicio</h3>
-					<div id="primero1">
-						<?php
-							if(isset($_SESSION['correo'])){
-						?>
-							<a href="panel.php">Bienvenido: <?php echo $_SESSION['correo']; ?>
-							<img src="../imagenes/icono_persona.png" alt="persona"></a>
-						<?php
-							}else{
-
-
-						?>
-						<a href="registro.php">Identifícate
-						<img src="../imagenes/icono_persona.png" alt="persona"></a>
-						<?php
-							}
-						?>
-					</div>
-					<div id="primero2">
-						<a href="./carritodecompras.php">
-						<img src="../imagenes/cesta.png" alt="persona"></a>
-					</div>
-				</div>
-				<div id="tercero">
+		<?php
+		include("./menu_carrito.php");
+		?>
+		<div class="col-md-12" id="contenido">
+				<div class="row">
 					<?php
-					include 'conexion.php';
+					include './conexion.php';
 					$cons = mysql_query("select * from productos where id=".$_REQUEST['id']) or die ("Error en la consulta");
 
 					$f = mysql_fetch_array($cons);
 					?>
-					<div class="imagen">
-						<img src="../imagenes/<?php echo $f['imagen'];?>">
+					<div class="col-md-4 ">
+						<div class="col-md-12 ">
+							<img class="imagenes"  src="../imagenes/<?php echo $f['imagen'];?>">
+				 		</div>
 					</div>
-					<div class="info">
+					<div class="col-md-12 ">
 						<h3 class="titulos"><?php echo $f['nombre'];?></h3>
 						<p class="titulos"><?php echo $f['descripcion'];?></p>
 						<h1 class="titulos"><?php echo $f['precio'];?><span>€</span></h1>
@@ -124,8 +41,10 @@
 					</div>
 				</div>
 
-				</div>	
-			</div>
-
+		</div>
+		<?php
+			include("./pie.php");
+		?>	
+			
 	</body>
 </html>
