@@ -27,13 +27,13 @@
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PERIFERICOS <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li class="linea"><a href="../../Perifericos/monitores/monitores.php" target="">Monitores</a></li>
-						<li class="linea"><a href="../../Perifericos/impresoras/impresoras.php" target="">Impresoras</a></li>
-						<li class="linea"><a href="../../Perifericos/multifuncion/multifunciones.php" target="">Multifunciones</a></li>
-						<li class="linea"><a href="../../Perifericos/altavoces/altavoces.php" target="">Altavoces</a></li>
-						<li class="linea"><a href="../../Perifericos/teclados/teclados.php" target="">Teclados</a></li>
-						<li class="linea"><a href="../../Perifericos/ratones/ratones.php" target="">Ratones</a></li>
-						<li class="linea"><a href="../../Perifericos/auriculares/auriculares.php" target="">Auriculares</a></li>
+						<li class="linea"><a href="./../../Perifericos/monitores/monitores.php" target="">Monitores</a></li>
+						<li class="linea"><a href="./../../Perifericos/impresoras/impresoras.php" target="">Impresoras</a></li>
+						<li class="linea"><a href="./../../Perifericos/multifuncion/multifunciones.php" target="">Multifunciones</a></li>
+						<li class="linea"><a href="./../../Perifericos/altavoces/altavoces.php" target="">Altavoces</a></li>
+						<li class="linea"><a href="./../../Perifericos/teclados/teclados.php" target="">Teclados</a></li>
+						<li class="linea"><a href="./../../Perifericos/ratones/ratones.php" target="">Ratones</a></li>
+						<li class="linea"><a href="./../../Perifericos/auriculares/auriculares.php" target="">Auriculares</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">

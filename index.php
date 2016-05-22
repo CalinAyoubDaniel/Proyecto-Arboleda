@@ -34,7 +34,7 @@ session_start();
 					<div class="col-md-12">
 						<div class="row">
 							<?php
-							$re = mysql_query("select * from productos")or die(mysql_error());
+							$re = mysql_query("select * from productos where ofertas = 'si' ")or die(mysql_error());
 							$cont = 0;
 
 							while ($f = mysql_fetch_array($re)) {

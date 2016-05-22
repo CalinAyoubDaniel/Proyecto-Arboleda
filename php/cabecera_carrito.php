@@ -13,4 +13,4 @@
 <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
 
 <a href="../index.php" ><img src="../imagenes/icono.png" class="img-responsive" id="logo"> </a>
-<h1 id="logo">COMPONENTES PC</h1>
+<h1 id="logo-title">COMPONENTES PC</h1>
