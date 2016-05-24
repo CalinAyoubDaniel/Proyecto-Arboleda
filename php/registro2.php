@@ -19,7 +19,7 @@
 	<div class="container">
 
 		<?php
-		include("./menu.php")
+		include("./menu_registro.php")
 		?>
 <div class="col-md-8">
 	<div class="col-md-12">
@@ -154,6 +154,9 @@
 						<input type="password" class="form-control"  name="clave" placeholder="Introduce tu clave">
 					</div>
 					<input class="btn btn-default" type="submit" name="acceder" value="Enviar">
+
+					<input class="btn btn-default" type="submit" name="recordar" value="Recordar Clave">
+					
 				</form>
 			</table>
 		</div>
@@ -165,12 +168,24 @@
 				$clave = sha1(md5($pass));
 				$re = mysql_query("select * from usuarios where correo = '$correo'")or die(mysql_error());
 				$f = mysql_fetch_row($re);
-				
-				if($f[0] == $correo && $f[1] == $clave) {
-					$_SESSION['correo'] = $correo;
-					header("Location: ../index.php");
+				if (isset($_SESSION['errores'])) {
+					
 				}else{
-					echo "<script> alert('Clave o Correo Incorrectos.'); </script>";
+					$_SESSION['errores'] = 0;
+				}
+				
+				if ($_SESSION['errores'] < 3) {
+					if($f[0] == $correo && $f[1] == $clave ) {
+						$_SESSION['errores'] = 0;
+						$_SESSION['correo'] = $correo;
+						header("Location: ../index.php");
+					}else{
+						$_SESSION['errores']++;
+						echo "<script> alert('Clave o Correo Incorrectos.'); </script>";
+						echo $_SESSION['errores'];
+					}
+				}else{
+					echo "<script> alert('Tienes que recordar la clave.'); </script>";
 				}
 			}
 

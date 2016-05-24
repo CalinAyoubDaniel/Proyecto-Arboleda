@@ -1,4 +1,4 @@
-<?php
+ <?php
 	include '../conexion.php';
 	session_start();
 	$correo_sesion = $_SESSION['correo'];
@@ -21,19 +21,14 @@
 		$telefono = $_REQUEST['telefono'];
 		$fechaN = $_REQUEST['fecha'];
 
-		$re = mysql_query("select * from usuarios")or die(mysql_error());
-		$f = mysql_fetch_row($re);
-
-		if ($f[3] == $_REQUEST['dni']) {
-			echo "<script> alert('El usuario ya existe en la base de datos.'); </script>";
-		}else{
+		
 			if($pass == $passcom){
 				mysql_query("update usuarios set correo='$correo', clave='$clave', tipoC='$tipoC', dni='$dni', nombre='$nombre', apellidos='$apellidos', direccion='$direccion', pais='$pais', cp='$cp', poblacion='$poblacion', provincia='$provincia', telefono='$telefono', fechaN ='$fechaN' where correo like '$correo_sesion'")or die(mysql_error());
-				unset($_SESSION['carrito']);
-				header("Location: ../registro.php");
+				session_destroy();
+				header("Location: ../registro2.php");
 			}
 			
-		}
+		
 	}
 
 ?>

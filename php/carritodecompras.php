@@ -123,6 +123,7 @@ session_start();
 						?>
 					</table>
 					<p><a href="../index.php">Ver Catalogo</a></p>
+					<p><a href="./informacion/vaciar_carrito.php">Vaciar carrito</a></p>
 				</div>
 			</div>	
 		</div>

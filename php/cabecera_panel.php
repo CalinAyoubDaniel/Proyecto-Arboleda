@@ -10,8 +10,9 @@
 
 <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
+<link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+<script src="../jquery/jquery-1.12.3.min.js"></script>
 <div class="logo">
 </div>
-	<a href="./index.php" ><img src="./imagenes/icono.png" class="img-responsive" id="logo"> </a>
-	<a href="./index.php" ><img src="./imagenes/titulo-logo.png" class="img-responsive" id="logo-title"> </a>
+	<a href="../index.php" ><img src="../imagenes/icono.png" class="img-responsive" id="logo"> </a>
+	<a href="../index.php" ><img src="../imagenes/titulo-logo.png" class="img-responsive" id="logo-title"> </a>

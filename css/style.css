@@ -1,18 +1,39 @@
-#logo{
-  
-width: 268px;
-margin-right: auto;
-margin-left: auto;
+body{
+font-family: QuadonLight;
+}
+.jumbotron{
+	background-image: url("../imagenes/fondo-principal.jpg");
+	background-repeat: no-repeat;
+	color: #337ab7;
+	text-decoration: none;
 
 }
+.jumbotron a{
+	text-decoration: none;
+
+}
+.navbar{
+	background-image: url("../imagenes/fondo-principal.jpg");
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+#logo{
+ 	margin-top: 20px;
+	width: 150px;
+	margin-left: 300px;
+}
+.logo{
+	background-image: url("../imagenes/fondo-principal.jpg");
+	background-repeat: no-repeat;
+	height: 20px;
+}
 #logo-title{
-  	font-size: 28px;
-	width: 272px;
+  	font-size: 90px;
 	margin-left: auto;
 	margin-right: auto;
 	text-shadow:3px 3px 4px #989898,
 	-2px -2px 3px white;
-	color: #F9882D;
+	color: #9C9D9D;
 
 }
 
@@ -33,6 +54,74 @@ margin-left: auto;
 	border-radius: 10px;
 	padding-top: 0.5px;
 }
+.paneles{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	background-color: #ECECEC;
+	padding-left: 10px;
+	height: 1%;
+	border-radius: 10px;
+	padding-top: 0.5px;
+	padding: 20px;
+}
+.paneles table{
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	color: #337ab7;
+}
+.paneles table tr td{
+	border: 1px solid black;
+	padding: 3px;
+}
+.paneles .info-table{
+	background-color: #FFFFFF;
+	color: #337ab7;
+	font-weight: bold;
+}
+.paneles .colorTabla{
+	background-color: #FFFFFF;
+	color: #337ab7;
+	font-weight: bold;
+	font-size: 15px;
+}
 .oferta h3{
-	color: #F9882D;
+	color: #337ab7;
+}
+.paneles h1{
+	color: #337ab7;
+}
+.paneles-2{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	background-color: #ECECEC;
+	height: 1%;
+	border-radius: 10px;
+	padding: 20px;
+}
+.paneles-2 table{
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	color: #337ab7;
+	border-radius: 20px;
+	padding: 20px;
+}
+.paneles-2 h2{
+	color: #337ab7;
+}
+.carousel{
+	margin-bottom: 20px;
+}
+.contenedor-panel{
+	margin-bottom: 20px;
+}
+.contenedor-panel img{
+	width: 100%;
+}
+.cambio{
+	display: none;	
+}
+#lista{
+	display: none;
 }

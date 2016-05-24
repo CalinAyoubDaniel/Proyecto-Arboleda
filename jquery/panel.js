@@ -12,6 +12,7 @@ function comprobar(){
 		success:function(){
 			$("#lista").fadeIn(1000);
 			$("#lista").html(peticion.responseText);
+			$(".cambio").hide();
 		},
 		
 	});

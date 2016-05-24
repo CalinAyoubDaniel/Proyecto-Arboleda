@@ -11,6 +11,7 @@
 <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" media="screen" href="../../../css/style.css">
-
-<a href="../../../index.php" ><img src="../../../imagenes/icono.png" class="img-responsive" id="logo"> </a>
-<h1 id="logo-title">COMPONENTES PC</h1>
+<div class="logo">
+</div>
+	<a href="../../../index.php" ><img src="../../../imagenes/icono.png" class="img-responsive" id="logo"> </a>
+	<a href="../../../index.php" ><img src="../../../imagenes/titulo-logo.png" class="img-responsive" id="logo-title"> </a>

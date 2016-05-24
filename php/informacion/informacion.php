@@ -4,8 +4,8 @@
 		$correo = $_REQUEST['correo2'];
 		$consultaU = mysql_query("select * from usuarios where correo like '$correo'")or die(mysql_error());
 		?>
-		<table class="info-table">
-			<tr class="info-tr">
+		<table>
+			<tr class="info-table">
 				<td>Correo</td>
 				<td>Tipo</td>
 				<td>Dni/Nie</td>
