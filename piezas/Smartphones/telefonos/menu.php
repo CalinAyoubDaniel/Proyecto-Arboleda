@@ -47,8 +47,8 @@
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SMARTPHONE <span class="caret"></span></a>
 					<ul class="dropdown-menu"> 
-						<li class="linea"><a href="../telefonos/telefonos.php" target="">Smartphones</a></li>
-						<li class="linea"><a href="./fundas.php" target="">Fundas</a></li>
+						<li class="linea"><a href="./telefonos.php" target="">Smartphones</a></li>
+						<li class="linea"><a href="../fundas/fundas.php" target="">Fundas</a></li>
 						<li class="linea"><a href="../protectores/protectores.php" target="">Protectores de Pantalla</a></li>
 						<li class="linea"><a href="../tarjetas/tarjetas.php" target="">Tarjetas MicroSD</a></li>
 						<li class="linea"><a href="../powerbanks/power.php" target="">Powerbanks</a></li>

@@ -7,21 +7,21 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="../../../index.php">COMPONENTES PC</a>
+			<a class="navbar-brand" href="../index.php">COMPONENTES PC</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li ><a href="../../../index.php">HOME</a></li>
+				<li ><a href="../index.php">HOME</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">COMPONENTES <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li class="linea"><a href="../../Componentes/placas/placas.php" target="">Placas base</a></li>
-						<li class="linea"><a href="../../Componentes/procesadores/procesadores.php" target="">Procesadores</a></li>
-						<li class="linea"><a href="../../Componentes/discos duros/discos.php" target="">Discos Duros</a></li>
-						<li class="linea"><a href="../../Componentes/graficas/graficas.php" target="">Tarjetas Gráficas</a></li>
-						<li class="linea"><a href="../../Componentes/memorias ram/ram.php" target="">Memorias RAM</a></li>
-						<li class="linea"><a href="../../Componentes/fuentes/fuentes.php" target="">Fuentes de A.</a></li>
-						<li class="linea"><a href="../../Componentes/cajas/cajas.php" target="">Cajas/Torres</a></li>
+						<li class="linea"><a href="../placas/placas.php" target="">Placas base</a></li>
+						<li class="linea"><a href="../procesadores/procesadores.php" target="">Procesadores</a></li>
+						<li class="linea"><a href="../discos duros/discos.php" target="">Discos Duros</a></li>
+						<li class="linea"><a href="../graficas/graficas.php" target="">Tarjetas Gráficas</a></li>
+						<li class="linea"><a href="../memorias ram/ram.php" target="">Memorias RAM</a></li>
+						<li class="linea"><a href="../fuentes/fuentes.php" target="">Fuentes de A.</a></li>
+						<li class="linea"><a href="./cajas.php" target="">Cajas/Torres</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
@@ -39,9 +39,9 @@
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ZONA APPLE <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li class="linea"><a href="./iphone.php" target="">iphone</a></li>
-						<li class="linea"><a href="../accesorios/accesorios.php" target="">Accesorios</a></li>
-						<li class="linea"><a href="../repuestos/repuestos.php" target="">Repuestos</a></li>
+						<li class="linea"><a href="../../Zona Apple/iphone/iphone.php" target="">iphone</a></li>
+						<li class="linea"><a href="../../Zona Apple/accesorios/accesorios.php" target="">Accesorios</a></li>
+						<li class="linea"><a href="../../Zona Apple/repuestos/repuestos.php" target="">Repuestos</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">

@@ -1,7 +1,6 @@
-
-
 <?php
 	include("./conexion.php");
+	include("./expresiones.php");
 	session_start();
 ?>
 <!DOCTYPE html>
@@ -21,7 +20,7 @@
 		<?php
 		include("./menu_registro.php")
 		?>
-<div class="col-md-8">
+<div class="col-md-8 registro">
 	<div class="col-md-12">
 		NUEVO USUARIO
 	</div>
@@ -115,19 +114,29 @@
 		$provincia = $_REQUEST['provincia'];
 		$telefono = $_REQUEST['telefono'];
 		$fechaN = $_REQUEST['fecha'];
+		/*********comprobacion de datos*********/
 
-		$re = mysql_query("select * from usuarios")or die(mysql_error());
-		$f = mysql_fetch_row($re);
-		if ($f[3] == $_REQUEST['dni']) {
-			echo "<script> alert('El usuario ya existe en la base de datos.'); </script>";
-		}else{
-			if($pass == $passcom){
-				mysql_query("insert into usuarios (correo, clave, tipoC, dni, nombre, apellidos, direccion, pais, cp, poblacion, provincia, telefono, fechaN) values ('$correo','$clave','$tipoC','$dni','$nombre','$apellidos','$direccion','$pais','$cp'
-					,'$poblacion','$provincia','$telefono','$fechaN')")or die(mysql_error());
-				header("Location: ./registro2.php");
+			if(verificar_email($correo) && verificar_pass($pass) && verificar_cp($cp) && verificar_nombre($nombre) && verificar_dni($dni)){
+				$re = mysql_query("select * from usuarios")or die(mysql_error());
+				$f = mysql_fetch_row($re);
+				if ($f[3] == $_REQUEST['dni']) {
+					echo "<script> alert('El usuario ya existe en la base de datos.'); </script>";
+				}else{
+					if($pass == $passcom){
+						mysql_query("insert into usuarios (correo, clave, tipoC, dni, nombre, apellidos, direccion, pais, cp, poblacion, provincia, telefono, fechaN, intentos, estado) values ('$correo','$clave','$tipoC','$dni','$nombre','$apellidos','$direccion','$pais','$cp'
+							,'$poblacion','$provincia','$telefono','$fechaN','0','activado')")or die(mysql_error());
+						header("Location: ./registro2.php");
+					}
+
+				}
+			}else{
+				echo "<script> alert('El formato del correo debe ser nombre@dominio.com, La contraseña debe contener 10 caracteres, el cp 5 digitos.'); </script>";
 			}
 
-		}
+		/********fin***************************/
+
+
+		
 }
 
 
@@ -135,11 +144,8 @@
 ?>
 
 
-
-
-
 </div>
-	<div class="col-md-4">
+	<div class="col-md-4 registro">
 		<div class="col-md-12">
 			<h1>Usuario registrado</h1>
 			<hr>
@@ -153,9 +159,12 @@
 						Clave:
 						<input type="password" class="form-control"  name="clave" placeholder="Introduce tu clave">
 					</div>
-					<input class="btn btn-default" type="submit" name="acceder" value="Enviar">
-
-					<input class="btn btn-default" type="submit" name="recordar" value="Recordar Clave">
+					<input class="btn btn-default" type="submit"  id="acceder" name="acceder" value="Enviar">
+					<br>
+					<br>
+					<div class="form-group" id="recordar">
+						<input class="btn btn-default" type="button" name="recordar" value="Recordar">
+					</div>
 					
 				</form>
 			</table>
@@ -168,28 +177,28 @@
 				$clave = sha1(md5($pass));
 				$re = mysql_query("select * from usuarios where correo = '$correo'")or die(mysql_error());
 				$f = mysql_fetch_row($re);
-				if (isset($_SESSION['errores'])) {
-					
+				if($f[0] == $correo && $f[1] == $clave && $f[13] < 3 ) {
+					$_SESSION['correo'] = $correo;
+					header("Location: ../index.php");
+					mysql_query("update usuarios set intentos = 0 where correo like '$correo'")or die(mysql_error());
+				}else if($f[13] == 3 && $f[14] == "activado"){
+					mysql_query("update usuarios set estado = 'bloqueado' where correo like '$correo'")or die(mysql_error());
+				?>
+					<script> alert('Cuenta Bloqueada');</script>
+				<?php
 				}else{
-					$_SESSION['errores'] = 0;
+					mysql_query("update usuarios set intentos = intentos + 1 where correo like '$correo'")or die(mysql_error());
+				?>
+					<script> alert('Clave o Correo Incorrectos.'); </script>
+				<?php
 				}
 				
-				if ($_SESSION['errores'] < 3) {
-					if($f[0] == $correo && $f[1] == $clave ) {
-						$_SESSION['errores'] = 0;
-						$_SESSION['correo'] = $correo;
-						header("Location: ../index.php");
-					}else{
-						$_SESSION['errores']++;
-						echo "<script> alert('Clave o Correo Incorrectos.'); </script>";
-						echo $_SESSION['errores'];
-					}
-				}else{
-					echo "<script> alert('Tienes que recordar la clave.'); </script>";
-				}
 			}
 
 		?>
+	</div>
+	<div id="lista">
+		
 	</div>
 		<?php
 		include("./pie.php")
