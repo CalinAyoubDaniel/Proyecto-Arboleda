@@ -1,6 +1,5 @@
 <?php
 
-session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -91,7 +90,7 @@ session_start();
 	</div>
 	<?php
 	if(isset($_REQUEST['enviar'])){
-		include("../php/conexion.php");
+		include("./conexion.php");
 
 		$uploadedfileload="true";
 		$uploadedfile_size=$_FILES['uploadedfile']['size'];

@@ -11,7 +11,7 @@
 		</div><!--/.nav-collapse -->
 		
 		<div  class="list-group-item ">
-      <h3><?php echo $servicios['titulo'][1] ?></h3>
+      <h3><?php /*echo $servicios['titulo'][1]; */?></h3>
       <a href="insertar.php" class="list-group-item " >INSERTAR PRODUCTO</a>
 	  <a href="borrar.php" class="list-group-item " >BORRAR PRODUCTO</a>
 	  <a href="modificar.php" class="list-group-item " >MODIFICAR PRODUCTO</a>

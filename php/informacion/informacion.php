@@ -24,7 +24,7 @@
 					
 					while($usuario = mysql_fetch_row($consultaU)){
 						foreach ($usuario as $key => $value) {
-							if($key == 1){
+							if($key == 1 || $key == 13 || $key == 14){
 							}else{
 				?>
 								<td><?php echo $value; ?></td>

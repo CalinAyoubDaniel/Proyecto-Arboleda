@@ -130,9 +130,13 @@ margin-left: auto;
 }
 .contenedor-panel{
 	margin-bottom: 20px;
+	color: #337ab7;
 }
 .contenedor-panel img{
 	width: 100%;
+}
+.panel .contenedor-panel .botones{
+	text-align: center;
 }
 .cambio{
 	display: none;	
@@ -140,3 +144,14 @@ margin-left: auto;
 #lista{
 	display: none;
 }
+#listas{
+	display: none;
+}
+#pie{
+	background-image: url("../imagenes/fondo-principal.jpg");
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+	border-radius: 10px;
+	padding: 5px;
+}
+

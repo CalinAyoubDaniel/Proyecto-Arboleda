@@ -1,14 +1,14 @@
 $(document).ready(function(){
-	$("#recordar").click(comprobar);
+	$("#recordar").click(recuperar);
 	$("#update").click(update);
 })
-function comprobar(){
-	var factura = "ok";
+function recuperar(){
+	var estado = "ok";
 	var peticion = $.ajax({
 		url: "../php/recuperar/recuperar.php",
 		type: "POST",
 		async: true,
-		data: "correo="+factura,
+		data: "estado="+estado,
 		success:function(){
 			$("#lista").fadeIn(1000);
 			$("#lista").html(peticion.responseText);

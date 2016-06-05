@@ -40,7 +40,7 @@ session_start();
 						<a href="../../../php/carritodecompras.php?id=<?php echo $f['id'];?>">Añadir al Carrito</a>
 					</div>
 				</div>
-
+			</div>
 		</div>
 		<?php
 			include("../../../php/pie.php");

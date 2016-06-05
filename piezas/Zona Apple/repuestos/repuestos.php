@@ -63,9 +63,9 @@ session_start();
 						?>	
 					</div>
 			</div>
-			<?php
-				include("../../../php/pie.php");
-			?>
 		</div>
+		<?php
+			include("../../../php/pie.php");
+		?>
 	</body>
 </html>

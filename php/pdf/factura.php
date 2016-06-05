@@ -22,7 +22,7 @@ while($datatmp = mysql_fetch_assoc($resEmp)) {
 	$data[] = array_merge($datatmp, array('id'=>$ixx));
 }
 $titles = array(
-				'dni'=>'<b>Dni</b>',
+				
 				'id'=>'<b>Id</b>',
 				'numeroventa'=>'<b>Numero venta</b>',
 				'nombre'=>'<b>Nombre</b>',
@@ -37,6 +37,7 @@ $options = array(
 			);
 $txttit = "<b>FACTURA DE COMPRA</b>\n";
 $txttit.= "COMPONENTES PC \n";
+
 
 $pdf->ezText($txttit, 12);
 $pdf->ezTable($data, $titles, '', $options);

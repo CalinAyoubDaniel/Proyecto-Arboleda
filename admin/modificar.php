@@ -2,7 +2,6 @@
 
 include('./cabecera.php');
 
-
 ?>
 <div class="container">
 	<?php

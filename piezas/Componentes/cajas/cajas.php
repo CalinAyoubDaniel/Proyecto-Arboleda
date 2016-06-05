@@ -33,7 +33,8 @@ session_start();
 
 									?>
 
-								</div><div class="row">
+								</div>
+								<div class="row">
 
 								<?php
 								$cont = 0;
@@ -62,6 +63,7 @@ session_start();
 						}
 						?>	
 					</div>
+				</div>
 			</div>
 			<?php
 				include("../../../php/pie.php");

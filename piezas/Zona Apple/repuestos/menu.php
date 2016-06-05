@@ -40,8 +40,8 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ZONA APPLE <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li class="linea"><a href="../iphone/iphone.php" target="">iphone</a></li>
-						<li class="linea"><a href="./accesorios.php" target="">Accesorios</a></li>
-						<li class="linea"><a href="../repuestos/repuestos.php" target="">Repuestos</a></li>
+						<li class="linea"><a href="../accesorios/accesorios.php" target="">Accesorios</a></li>
+						<li class="linea"><a href="./repuestos.php" target="">Repuestos</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
