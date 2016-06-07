@@ -8,7 +8,7 @@ function verificar_email($email){
 	}
 }
 function verificar_pass($pass){
- 	if(preg_match("/^([a-z}|[A-Z]|[0-9]){10}$/",$pass)){
+ 	if(preg_match("/^([a-z]|[A-Z]|[0-9]){10,}$/",$pass)){
     	return true;
 	}else{
 		return false;
@@ -29,7 +29,7 @@ function verificar_nombre($nombre){
 	}
 }
 function verificar_dni($dni){
- 	if(preg_match('/^[0-9]{7,8}[A-Z]$/',$dni)){
+ 	if(preg_match('/^([0-9]|[A-Z]|[a-z]){1}[0-9]{7}[A-Z]{1}$/',$dni)){
     	return true;
 	}else{
 		return false;

@@ -94,14 +94,14 @@ session_start();
 							<div class="producto">
 								
 								
-									<td><img src="../imagenes/<?php echo $datos[$i]['Imagen'];?>"></td>
+									<td><img src="../imagenes/<?php echo $datos[$i]['Imagen'];?>" class="img-responsive"></td>
 									<td><?php echo $datos[$i]['Nombre'];?></td>
 									<td>Precio: <?php echo $datos[$i]['Precio'];?></td>
 									<td>Cantidad:
 										<input type="text" value="<?php echo $datos[$i]['Cantidad'];?>"
 										data-precio="<?php echo $datos[$i]['Precio'];?>"
 										data-id="<?php echo $datos[$i]['Id'];?>"
-										class="cantidad">
+										class="cantidad" style="width:10px;">
 									</td>
 									<td class="sub">Subtotal: <?php echo $datos[$i]['Precio']*$datos[$i]['Cantidad'];?></td>
 								

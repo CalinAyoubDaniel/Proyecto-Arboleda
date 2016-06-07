@@ -20,7 +20,7 @@ session_start();
 		$dni = $cosa[3];
 		echo $dni;
 		for($i=0;$i<count($array);$i++){
-			mysql_query("insert into compras (dni,numeroventa, nombre, precio, cantidad, subtotal) values ('".$dni."','".$numeroventa."','".$array[$i]['Nombre']."','".$array[$i]['Precio']."','".$array[$i]['Cantidad']."','".($array[$i]['Precio']*$array[$i]['Cantidad'])."')")or die(mysql_error());
+			mysql_query("insert into compras (dni,id,numeroventa, nombre, precio, cantidad, subtotal) values ('".$dni."','".$array[$i]['Id']."','".$numeroventa."','".$array[$i]['Nombre']."','".$array[$i]['Precio']."','".$array[$i]['Cantidad']."','".($array[$i]['Precio']*$array[$i]['Cantidad'])."')")or die(mysql_error());
 		}
 		unset($_SESSION['carrito']);
 		header("Location: ../../index.php");

@@ -6,7 +6,7 @@ body{
 	border: 1px solid #F0F0F0;
 	box-shadow: 0px 0px 5px #f7f7f7;
 	padding: 10px;
-	border-radius: 4px;
+	/*border-radius: 4px;*/
 	width: 60%;
 	box-shadow: 0px 0px 10px #4C4B4B;
 }
@@ -40,7 +40,7 @@ body{
 }
 #cuerpo nav{
 	background-color: #F9882D;
-	border-radius: 4px;
+	/*border-radius: 4px;*/
 	position: relative;
 }
 .linea a{
@@ -68,7 +68,7 @@ nav li ul {
 
 nav li:hover > ul {
 	display:block;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	margin-top: 15px;
 	float: left;
 }
@@ -89,7 +89,7 @@ nav li ul li {
 	background-color: #ECECEC;
 	padding: 4px;
 	width: 99.5%;
-	border-radius: 4px;
+	/*border-radius: 4px;*/
 }
 #primero h3{
 	color: #F9882D;
@@ -126,7 +126,7 @@ nav li ul li {
 	position: relative;
 }
 #slider{
-	border-radius:10px;
+	/*border-radius:10px;*/
 	width: 92%;
 	min-height: 200px;
 	margin-top: 20px;
@@ -167,7 +167,7 @@ nav li ul li {
 	padding-left: 10px;
 	width: 50%;
 	height: 1%;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	padding-top: 0.5px;
 }
 .oferta h3{
@@ -210,14 +210,14 @@ nav li ul li {
 	width: 55%;
 	padding: 0.5%;
 	border: 1px solid black;
-	border-radius: 1%;
+	/*border-radius: 1%;*/
 }
 #iniciosesion{
 	float: right;
 	width: 35%;
 	padding: 0.5%;
 	border: 1px solid black;
-	border-radius: 1%;
+	/*border-radius: 1%;*/
 	margin-top: -44.7%;
 }
 
