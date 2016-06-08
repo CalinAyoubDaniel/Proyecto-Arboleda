@@ -33,6 +33,7 @@
 			?>
 				<script type="text/javascript">
 					alert("Algun dato es incorrecto.");
+					window.location.reload("./registro2.php");
 				</script>
 
 
@@ -42,7 +43,7 @@
 			?>
 				<script type="text/javascript">
 					alert("Rellene todos los campos.");
-					window.location.replace("./registro2.php");
+					window.location.reload("./registro2.php");
 				</script>
 
 			<?php

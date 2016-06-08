@@ -11,7 +11,7 @@
         <div class="col-md-4">
             <?php
                 $cosa = $_SERVER['REQUEST_URI'];
-                if($cosa == "/componentes_pc/index.php"){
+                if($cosa == "/componentes_pc/index.php" || $cosa == "/" || $cosa == "/index.php"){
             ?>
             <ul class="list-inline">
                 <li>
